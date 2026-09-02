@@ -1,8 +1,13 @@
+# SearXNG para la caza de Esperides. Enciende el JSON de la API y quita el limiter
+# antibot para que el backend de Ispalo pueda consultar por HTTP.
 use_default_settings: true
 server:
-  secret_key: "ChangeThisToRandomString32CharsMin"
+  secret_key: "747d50964d6a4a67f334a35002c1de168b2e70757b6b29cbffd06377b22b7c50"
   limiter: false
+  bind_address: "0.0.0.0"
+  port: 8080
 search:
+  safe_search: 0
   formats:
     - html
     - json
